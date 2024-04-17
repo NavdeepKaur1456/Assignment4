@@ -1,0 +1,32 @@
+.output-page-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lavenderblush;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.result {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.result-label {
+  font-weight: bold;
+}
+
+.result-value {
+  color: #007bff;
+}
+
+@media (max-width: 480px) {
+  .output-page-container {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="input-page-container">
+  <form [formGroup]="tipForm" (ngSubmit)="calculateTip()">
+    <mat-form-field appearance="fill">
+      <mat-label>Cost of Service</mat-label>
+      <input matInput formControlName="costOfService" type="number">
+      <mat-error *ngIf="tipForm.controls['costOfService'].invalid">
+        Please enter a valid number.
+      </mat-error>
+    </mat-form-field>
+
+    <label>Service Quality:</label>
+    <br>
+    <mat-radio-group formControlName="serviceQuality">
+      <mat-radio-button value="0.15">Okay - 15%</mat-radio-button>
+      <br>
+      <mat-radio-button value="0.18">Good - 18%</mat-radio-button>
+      <br>
+      <mat-radio-button value="0.20">Excellent - 20%</mat-radio-button>
+      <br>
+    </mat-radio-group>
+    <br>
+
+    <mat-checkbox formControlName="roundUpTip">Round up tip</mat-checkbox>
+    <br>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="tipForm.invalid">
+      Calculate
+    </button>
+  </form>
+</div>

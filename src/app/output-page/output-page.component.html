@@ -1,0 +1,8 @@
+<div class="output-page-container">
+  <h2>Tip Calculation Results</h2>
+  <p>Cost of Service: {{ costOfService | currency }}</p>
+  <p>Service Quality: {{ serviceQuality | percent }}</p>
+  <p>Round Up Tip: {{ roundUpTip ? 'Yes' : 'No' }}</p>
+  <p>Calculated Tip: {{ calculatedTip | currency }}</p>
+  <p>Total Amount: {{ totalAmount | currency }}</p>
+</div>

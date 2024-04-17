@@ -1,0 +1,49 @@
+.input-page-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightpink;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-radio-group {
+  margin-top: 20px;
+}
+
+mat-checkbox {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: lightskyblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .input-page-container {
+    padding: 10px;
+  }
+}
