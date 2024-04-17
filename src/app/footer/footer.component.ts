@@ -1,3 +1,4 @@
+//footer ts
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,7 +14,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Update the date and time every second.
+
     setInterval(() => {
       this.currentDateTime = new Date();
     }, 1000);
