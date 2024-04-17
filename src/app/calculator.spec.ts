@@ -25,3 +25,4 @@ describe('Calculator', () => {
     expect(calculator.calculateTotal()).toEqual(118); // Assuming the tip is rounded to the nearest dollar
   });
 });
+//end

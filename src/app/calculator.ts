@@ -24,3 +24,4 @@ export class Calculator {
     return this.costOfService + tip;
   }
 }
+//end
